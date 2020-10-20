@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: white;
+    background-image: url("resources/background.jpg");
+    font-size: 32px;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    flex-direction: column;
+}
+
+form {
+    /*background-color: black;*/
+    border-radius: 5px;
+    padding: 1%;
+}
+
+input {
+    width: 98%;
+    font-size: 30px;
+}
+
+button {
+    margin: 1%;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 102);
+    color: white;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 0.75rem;
+    
+}
+
+p {
+    background-color: rgba(0, 0, 102, 0.5);
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+#cball {
+    max-width: 35%;
+    opacity: .75;
+}
