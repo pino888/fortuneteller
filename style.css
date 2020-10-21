@@ -5,7 +5,6 @@
 
 html {
     color: white;
-    background-image: url("resources/background.jpg");
     font-size: 32px;
     font-family: 'Sansita Swashed', cursive;
 }
@@ -15,40 +14,65 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1%;
+    padding: 0.5%;
     flex-direction: column;
+    background-image: url("resources/background.jpg");
 }
 
-form {
-    /*background-color: black;*/
+/*form {
+    background-color: black;
     border-radius: 5px;
-    padding: 1%;
-}
+    padding: 0.5%;
+}*/
 
 input {
-    width: 98%;
+    width: 48%;
     font-size: 30px;
 }
 
 button {
-    margin: 1%;
-    height: 40px;
-    width: 80px;
+    height: 50px;
+    width: 120px;
     border-radius: 5px;
     background-color: rgb(0, 0, 102);
     color: white;
     font-family: 'Sansita Swashed', cursive;
     font-size: 0.75rem;
-    
+    margin-bottom: 1.5%;
 }
 
 p {
     background-color: rgba(0, 0, 102, 0.5);
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 #cball {
-    max-width: 35%;
-    opacity: .75;
+    max-width: 30%;
+    /*opacity: .4;*/
+    animation: glow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        margin-top: 20%;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+        margin-top: 12%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        margin-top: 7%;
+    }
+}
+
+@keyframes glow {
+    from {opacity: 0.8;}
+    to {opacity: 1;}
 }
