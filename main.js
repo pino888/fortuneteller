@@ -11,7 +11,7 @@ const displayAnswer = () => {
     if (questionField.value.length <= 0) {
         answerField.innerHTML = "I can fortell the future but I cannot read your mind, please ask your question...";
         questionField.focus();
-    } else if (questionField.value.length <= 7) {
+    } else if (questionField.value.length <= 5) {
         answerField.innerHTML = "Please be more specific, unless you don't really want to know the answer?";
         questionField.value = "";
         questionField.focus();    
