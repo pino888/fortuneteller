@@ -59,8 +59,17 @@ p {
 @media only screen and (max-width: 480px) {
     input {
         width: 78%;
+        margin: 2%;
+    }
+
+    br {
+        display: none;
     }
     
+    p {
+        font-size: 1rem;
+    }
+
     #cball {
         max-width: 70%;
     }
