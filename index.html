@@ -7,12 +7,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
     <body>
-        <img src="resources/ball.png" id="cball">
-        <!--<form>-->
-            <label for="question">What is your question stranger?</label><br>
-            <input type="text" id="question" name="question" autofocus><br>
-        <!--</form>-->
-        <button id="check">Ask me</button>
+        <div>
         <p id="answerfield"></p>
+        <img src="resources/ball.png" id="cball">
+        </div>
+        <label for="question">What is your question stranger?</label><br>
+        <input type="text" id="question" name="question" autofocus onkeydown="myFunction(event)"><br>
+        <button id="check">Ask me</button>
     </body>
 </html>

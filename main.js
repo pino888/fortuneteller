@@ -4,7 +4,7 @@ const answers = [["It is certain.", "It is decidedly so.", "Without a doubt!", "
 // fetching elements
 let answerField = document.getElementById("answerfield");
 let button = document.getElementById("check");
-let questionField = document.getElementById("question");
+var questionField = document.getElementById("question");
 
 // function to displaying an answer
 const displayAnswer = () => {
@@ -26,4 +26,10 @@ const displayAnswer = () => {
 // button function
 button.onmouseup = displayAnswer;
 
-// questionField.addEventListener("keydown", displayAnswer);
+// enter key function
+function myFunction(event) {
+    var x = event.which || event.keyCode;
+    if (x == 13) {
+        button.onmouseup();
+    }
+}
